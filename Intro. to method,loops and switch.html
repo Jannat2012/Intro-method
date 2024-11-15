@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JavaScript </title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<p id="demo"></p>
+<script>
+var str="VNSC";
+document.write(str.toLowerCase())
+document.write("<br>");
+document.write(str.toUpperCase())
+document.write("<br>");
+document.write(str.startsWith("V"))
+document.write("<br>");
+
+
+//---For Loop---//
+for(let i=5;i<=5;i++){
+	document.write(i);
+	document.write("VNSC");
+	document.write("<br>");
+}
+for(let i=10;i>0;i--){
+	document.write(i);
+	document.write("<br>");
+}
+for(let x=2;x<40;x=x+2){
+	document.write(x);
+	document.write(",");
+	document.write("<br>");
+}
+for(let x=1;x<30;x=x+2){
+	document.write(x);
+	document.write(",");
+}
+//---Array Declaration---//
+var friendName=["Bashuri","Naziha","Nikhat"];
+var age=[12,13,12];
+document.write(friendName);
+var fruits=["Apple","Mango","Banana","Jack Fruit","Watermelon"];
+var text="";
+var i;
+for(i=0;i<fruits.length;i++){
+	text+=fruits[i]+"<br>";
+}
+document.getElementById("demo").innerHTML=text;
+
+</script>
+
+</body>
+
+</html>
